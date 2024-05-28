@@ -1,0 +1,268 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    font-family: "Noto Sans JP",
+        "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif !important;
+    font-weight: 400;
+    color: #222;
+    /* background-color: #88f5ec; */
+    /* 方眼紙模様に必須のスタイル */
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+        linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+    background-size: 16px 16px;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+section {
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 25px -12px rgba(96, 96, 96, 0.5);
+}
+
+.section {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+}
+
+img {
+    margin: auto;
+}
+
+/* 
+ * 
+ */
+
+.head {
+    position: relative;
+    margin: 0 0 4vw;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: thin solid #ccc;
+    z-index: 1;
+}
+
+.head .catch_copy {
+    color: #d80614;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    /* 横線を上下中央 */
+    display: flex;
+    align-items: center;
+    /* 文字と横線を横並び */
+    justify-content: center;
+    /* 文字を中央寄せ */
+    flex-shrink: 0;
+    /* 横線を伸ばす */
+    margin-bottom: 0.25rem;
+}
+
+.head .catch_copy::before,
+.head .catch_copy::after {
+    background-color: #ccc;
+    /* 横線の色 */
+    content: "";
+    height: 1px;
+    /* 横線の高さ */
+    flex-grow: 1;
+    /* 横線を縮めない */
+}
+
+.head .catch_copy::before {
+    margin-right: 4px;
+    /* 文字との余白 */
+}
+
+.head .catch_copy::after {
+    margin-left: 4px;
+    /* 文字との余白 */
+}
+
+.head .product {
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #00b9ad;
+}
+
+.head .company {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    color: #00b9ad;
+}
+
+hr {
+    margin: 1.25rem 0;
+    border: 0;
+    border-top: thin dotted #ddd;
+}
+
+
+/* ボタン */
+.cta_btn04 {
+    font-weight: bold;
+    /* 文字の太さ */
+    width: 100%;
+    /* ボタン幅 */
+    display: inline-block;
+    padding: 1em;
+    transition: 0.3s;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #fff;
+    /* ボタン文字色 */
+    border-radius: 10px;
+    background: #F38173;
+    /* 背景色 */
+    box-shadow: 0 5px 0 #b84131;
+    text-align: center;
+}
+
+.cta_btn04 p {
+    margin: 0;
+}
+
+.cta_btn04 .cta_btn04_copy {
+    font-size: 80%;
+    /* コピー文字サイズ */
+    display: block;
+    padding: 0.3em 0;
+    color: #b84131;
+    /* コピー文字色 */
+    border-radius: 100vh;
+    background: #fff;
+    /* コピー背景色 */
+    margin-bottom: 10px;
+}
+
+/* マウスオーバーした際のデザイン */
+.cta_btn04:hover {
+    transform: translate(0, 3px);
+    color: #fff;
+    background: #F38173;
+    box-shadow: 0 2px 0 #b84131;
+}
+
+
+.anchor-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #00b9ad;
+    ;
+}
